@@ -24,3 +24,5 @@ jobs:
         with:
           # ⚠️ Make sure to configure a `CHROMATIC_PROJECT_TOKEN` repository secret
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
+      - name: Alert Better Stack
+        run: curl -X HEAD https://uptime.betterstack.com/api/v1/heartbeat/qjJ9FUJYVL1A2aVdpKtQLaWs
